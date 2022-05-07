@@ -89,7 +89,7 @@ try:
         for i in range(size):
                 for j in range(size):
                         buffer = F[i][j]
-                        F[i][j] = F[i + raw_q %2 + size][j]
+                        F[i][j] = F[i + row_q %2 + size][j]
                         F[i + raw_q %2 + size][j] = buffer
     time_prev = time_next
     time_next = time.time()
